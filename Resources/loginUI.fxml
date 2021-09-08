@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="1209.0" style="-fx-background-color: #AAF2E4; -fx-border-style: solid; -fx-border-color: black; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UseCaseControllers.LoginController">
+   <top>
+      <VBox prefHeight="149.0" prefWidth="1209.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox accessibleRole="IMAGE_VIEW" alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #00A897; -fx-border-color: black; -fx-border-width: 2; -fx-border-style: hidden hidden solid hidden;">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="105.0" fitWidth="201.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Label fx:id="titleLabel" alignment="TOP_LEFT" contentDisplay="CENTER" text="Bay Marine Rescue" textFill="WHITE" translateX="205.0">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Login">
+               <font>
+                  <Font size="40.0" />
+               </font>
+               <padding>
+                  <Insets bottom="30.0" />
+               </padding>
+            </Label>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="216.0" prefWidth="465.0" style="-fx-background-color: #F3F3F3; -fx-border-color: #000000; -fx-border-width: 2;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Username:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="user" prefWidth="185.0" promptText="Use &quot;Staff ID&quot; to login" style="-fx-border-color: #000000; -fx-border-width: 2;">
+                           <HBox.margin>
+                              <Insets left="135.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Password:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="password" prefWidth="185.0" promptText="Use &quot;Staff password&quot; to login" style="-fx-border-color: #000000; -fx-border-width: 2;">
+                           <HBox.margin>
+                              <Insets left="137.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="loginButton" alignment="TOP_CENTER" minHeight="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 2;" text="Sign In">
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="3.0" />
+                           </padding>
+                        </Button>
+                        <Label fx:id="errorLbl">
+                           <padding>
+                              <Insets left="100.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="1209.0" style="-fx-background-color: #AAF2E4; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UseCaseControllers.MainViewController">
+    <top>
+        <VBox prefHeight="104.0" prefWidth="1209.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox accessibleRole="IMAGE_VIEW" alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="1209.0" style="-fx-background-color: #00A897; -fx-border-color: black; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 2;">
+                    <children>
+                        <HBox prefHeight="105.0" prefWidth="189.0">
+                            <children>
+                                <ImageView fitHeight="105.0" fitWidth="201.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Logo.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </HBox>
+                        <Label fx:id="titleLabel" contentDisplay="CENTER" prefHeight="73.0" prefWidth="434.0" text="Bay Marine Rescue" textFill="WHITE" translateX="205.0">
+                            <font>
+                                <Font size="50.0" />
+                            </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                        </Label>
+                    </children>
+                </HBox>
+                <AnchorPane prefHeight="2.0" prefWidth="1209.0" />
+            </children>
+        </VBox>
+    </top>
+   <right>
+        <VBox maxHeight="720.0" maxWidth="1209.0" prefHeight="720.0" prefWidth="1209.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="90.0" prefWidth="1209.0">
+                    <children>
+                  <Button fx:id="btnLogOut" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Log Out">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="1209.0" text="Welcome to Bay Marine Rescue" textAlignment="CENTER">
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                     <padding>
+                        <Insets right="70.0" />
+                     </padding>
+                        </Label>
+                    </children>
+                </HBox>
+            <VBox prefHeight="632.0" prefWidth="1209.0">
+               <children>
+                  <HBox fx:id="LandingPageRow1" prefHeight="158.0" prefWidth="1209.0">
+                     <children>
+                        <Pane fx:id="addStaffPane" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnAddStaff" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox fx:id="hBoxAddStaff" alignment="CENTER_LEFT" layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fx:id="imgAddStaff" fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/dolphin.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblAddStaff" alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="Add Staff">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="modifyStaffPane" layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnModifyStaff" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/penguins.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="Modify Staff">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="viewStaffPane" layoutX="413.0" layoutY="10.0" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnViewStaffReports" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/whale_tail.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="View Staff Reports">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </children></HBox>
+                  <HBox fx:id="LandingPageRow11" layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="1209.0">
+                     <children>
+                        <Pane fx:id="registerAnimalPane" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnRegisterAnimal" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/fish.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="Register Animal">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="admitAnimalPane" layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnAdmitAnimal" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="114.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/turtle.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="Admit Animal">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="413.0" layoutY="10.0" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnViewDailyAdmissions" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/whale.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="View Daily Admissions">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="LandingPageRow12" layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="1209.0">
+                     <children>
+                        <Pane prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnModifyAnimalStatus" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/dolphin.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="Modify Animal Status">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="logbookPane" layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnUpdateLogbook" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/penguins.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="Update Logbook">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="413.0" layoutY="10.0" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnViewDailyLogs" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/whale_tail.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="View Daily Logs">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="LandingPageRow111" layoutX="10.0" layoutY="168.0" prefHeight="158.0" prefWidth="1209.0">
+                     <children>
+                        <Pane prefHeight="158.0" prefWidth="201.5" />
+                        <Pane fx:id="viewLogsPane" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnViewLogsPerAnimal" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/fish.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="View Logs Per Animal">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="413.0" layoutY="10.0" prefHeight="158.0" prefWidth="403.0">
+                           <children>
+                              <Button fx:id="btnViewAnimalReports" layoutX="12.0" layoutY="12.0" mnemonicParsing="false" prefHeight="135.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" />
+                              <HBox layoutX="12.0" layoutY="12.0" prefHeight="135.0" prefWidth="380.0">
+                                 <children>
+                                    <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@Images/Images/whale.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="135.0" prefWidth="283.0" text="View Animal Reports">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="201.5" />
+                     </children>
+                  </HBox>
+               </children></VBox>
+            </children>
+        </VBox>
+   </right>
+</BorderPane>
