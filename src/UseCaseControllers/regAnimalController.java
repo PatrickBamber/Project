@@ -1,6 +1,7 @@
 package UseCaseControllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
@@ -12,6 +13,8 @@ import java.sql.Connection;
 public class regAnimalController {
     Database queries = new Database();
     Connection connection;
+    String staffRole;
+    Scene scene;
 
     @FXML private Button btnARegister;
     @FXML private Button btnACancel;
